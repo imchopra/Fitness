@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Traning - G1 Fitness Centre</title>
+		<!--Creatd ourself-->
+		<link rel="icon" type="image/png" href="images/favicon.png">
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<div class="container topbar">
+					<div class="logo-icon">
+						<a href="index.html" class="logo">G1 FITNESS</a>
+						<a href="#" class="menu-icon">
+							<span onclick="toggleMenu()">
+	<!--						Created icon by myself-->
+								<img src="images/menu-icon.png" alt="Main Menu">
+							</span>
+						</a>
+					</div>
+					<nav id="nav">
+						<ul id="menu-list">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="aboutus.html">About</a></li>
+							<li><a href="nutrition.html">Nutrition</a></li>
+							<li><a href="training.html" class="active">Training</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="#" class="button signup-button" onclick="togglePopup()">Signup</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<main>
+				<section class="registraion popup" id="registration-popup">
+					<div class="overlay"></div>
+					<div class="content">
+						<div class="close-btn" onclick="togglePopup()">&times;</div>
+						<h1 class="section-heading">Register</h1>
+						<form class="registration-form" action="#" method="post">
+							<!--<p>is simply dummy text of the printing and typesetting industry.is simply dummy text of the printing and typesetting industry.is simply dummy text of the printing and typesetting industry.is simply dummy text of the printing and typesetting industry.</p>-->
+							
+							<div class="field-group">
+								<label for="first-name">First name</label>
+								<input type="text" name="first-name" id="first-name" placeholder="Enter first name" required>
+							</div>
+							
+							<div class="field-group">
+								<label for="last-name">Last name</label>
+								<input type="text" name="last-name" id="last-name" placeholder="Enter last name" required>
+							</div>
+							
+							<div class="field-group">
+								<label for="password">Password</label>
+								<input type="password" name="password" id="password" placeholder="Enter password" required>
+							</div>
+							
+							<div class="field-group">
+								<label for="email">E-mail</label>
+								<input type="email" name="email" id="email" placeholder="Enter e-mail" required>
+							</div>
+							
+							<div class="field-group message">
+								<label for="message">Message</label>
+								<textarea name="message" id="message" cols="10" rows="5"></textarea>
+							</div>
+							
+							<input class="submit button" type="submit" name="submit" value="Submit">
+						</form>
+					</div>
+				</section>
+				<section class="banner inner-page-banner training-banner">
+					<div class="container banner-content">
+						<h1>
+							<span>Training</span>
+						</h1>
+						<p>Don't stop until you are proud</p>
+					</div>
+				</section>
+				<section class="container workouts">
+					<h2 class="section-heading">Types of <span class="highlight-text">Trainings</span></h2>
+					<div class="row">
+						<div class="col">
+							<div class="image">
+							<!--Image From https://www.istockphoto.com/photo/sporty-people-running-on-treadmills-in-a-health-club-gm1092140606-293008130-->
+								<img src="images/cardio.jpg" alt="cardio workout">
+								<!--<div class="layer">
+									<div class="title">CARDIO WORKOUTS</div>
+								</div>-->
+							</div>
+							<h3>CARDIO</h3>
+							<p><span class="highlight-text">CARDIOVASCULAR FITNESS</span> is a health related physical fitness that is brought by sustained physical activity. A person's ability to deliver oxygen to the working muscles is affected by many physiological parameters.</p>
+							<a href="">Learn more ></a>
+						</div>
+
+						<div class="col">
+							<div class="image">
+							<!--Image From https://www.gqindia.com/content/best-shoulder-exercises-stronger-shoulders-->
+								<img src="images/shoulder.jpg" alt="shoulder workout">
+								<!--<div class="layer">
+									<div class="title">SHOULDER WORKOUTS</div>
+								</div>-->
+							</div>
+							<h3>SHOULDER</h3>
+							<p><span class="highlight-text">SHOULDER</span> exercises should be an integral part of any gym routine, because building strength and improving mobility in your shoulders will help with a range of other exercises. And of course, if you’re physique training.</p>
+							<a href="">Learn more ></a>
+						</div>
+
+						<div class="col">
+							<div class="image">
+							<!--Image From https://www.istockphoto.com/photo/body-building-workout-gm612262390-105439553-->
+								<img src="images/full.jpg" alt="full-body workout">
+								<!--<div class="layer">
+									<div class="title">FULL BODY WORKOUTS</div>
+								</div>-->
+							</div>
+							<h3>FULL BODY</h3>
+							<p>To accomplish any fitness goals it is necessary to run through a variety of exercises as part of your gym routine. However, if you are short on time and want moves that hit multiple muscle groups in one go, turn to these <span class="highlight-text">full-body exercises.</span></p>
+							<a href="">Learn more ></a>
+						</div>
+
+					</div>
+
+					<div class="row">
+						<div class="col">
+							<div class="image">
+							<!--Image From https://www.istockphoto.com/photo/man-focused-on-training-legs-on-the-machine-gm597631958-102365823-->
+								<img src="images/leg.jpg" alt="leg workout">
+								<!--<div class="layer">
+									<div class="title">LEG WORKOUTS</div>
+								</div>-->
+							</div>
+							<h3>LEG</h3>
+							<p>It’s always tempting to skip leg day, but no weight training plan is complete without at least one leg-focused workout a week.Turn your <span class="highlight-text">legs into mighty tree trunks</span> with beginner, intermediate and advanced exercises.</p>
+							<a href="">Learn more ></a>
+						</div>
+
+						<div class="col">
+							<div class="image">
+							<!--Image From https://www.istockphoto.com/photo/a-man-lifting-weights-on-a-bench-press-gm180200014-26869217-->
+								<img src="images/chest.jpg" alt="chest workout">
+								<!--<div class="layer">
+									<div class="title">CHEST WORKOUTS</div>
+								</div>-->
+							</div>
+							<h3>CHEST</h3>
+							<p>Building a <span class="highlight-text">BIGGER CHEST</span> certainly doesn’t happen overnight, but doing the right exercises which target your pectoral muscles from every angle using appropriate rep ranges will ensure you get the results from the graft</p>
+							<a href="">Learn more ></a>
+						</div>
+
+						<div class="col">
+							<div class="image">
+							<!--Image From https://www.istockphoto.com/photo/bodybuilder-exercising-with-dumbbells-gm478624729-36007760-->
+								<img src="images/abs.jpg" alt="abs workout">
+								<!--<div class="layer">
+									<div class="title">ABS WORKOUTS</div>
+								</div>-->
+							</div>
+							<h3>ABS</h3>
+							<p>It’s not only six-pack seekers who should be paying their abs plenty of attention when they visit the gym. <span class="highlight-text">STRONG ABS</span> are an integral part of a rock-solid core, which should be one of the goals of any fitness regime, turn to these abs exercises.</p>
+							<a href="">Learn more ></a>
+						</div>
+					</div>
+            	</section>
+				<section class="container">
+                	<h2 class="section-heading">Meet our <span class="highlight-text">Trainers</span></h2>
+					<div class="training-info">
+						<div class="trainer-info">
+							<div class="training-img">
+								<!--Image From https://www.istockphoto.com/photo/handsome-man-smiling-gm655928074-119463759-->
+								<img src="images/trainer1.jpg" alt="WILLIAMS">
+							</div>
+							<h3><span class="highlight-text">WILLIAMS</span></h3>
+							<p>My name is Williams. I am a certified personal trainer with a passion for helping people work on their health and fitness goals. I have been involved in the fitness industry for over 14 years.</p>
+						</div>
+						<div class="trainer-info">
+							<div class="training-img">
+								<!--Image From https://www.istockphoto.com/photo/young-man-standing-with-towel-gm186878795-27731678-->
+								<img src="images/trainer2.jpg" alt="JONES">
+							</div>
+							<h3><span class="highlight-text">JONES</span></h3>
+							<p>My name is Jones. I want to take my passion and use it to help others reach their health and fitness goals; to help them realise that fitness can be fun and enjoyable.</p>
+						</div>
+						<div class="trainer-info">
+							<div class="training-img">
+								<!--Image From https://www.istockphoto.com/photo/portrait-of-an-afro-athletic-man-gm843435036-137814959-->
+								<img src="images/trainer3.jpg" alt="WILSON">
+							</div>
+							<h3><span class="highlight-text">WILSON</span></h3>
+							<p>My name is Wilson. I am a qualified personal trainer and I have been in the fitness industry for the past 4 years. Being in the fitness industry has taught me alot in the past 4 years not only regarding fitness.</p>
+						</div>
+					</div>
+            	</section>
+			</main>
+			<footer>
+				<div class="footer container">
+					<div class="footer-info">
+						<h4>Address</h4>
+						<p>10 Mill Creek Road</p>
+					</div>
+					<div class="footer-info">
+						<h4>Hours</h4>
+						<p>Mon-Fri 11am-6pm</p>
+					</div>
+					<div class="footer-info">
+						<h4>Email</h4>
+						<p><a href="mailto:info@g1fitness.com">info@g1fitness.com</a></p>
+					</div>
+					<div class="footer-info">
+						<h4>Telephone</h4>
+						<div class="phone hide-desktop">
+							<a href="tel:9999999999">999 999 9999</a>
+						</div>
+						<div class="phone hide-mobile">
+							<p>999 999 9999</p>
+						</div>
+					</div>
+				</div>
+				<div class="copyright">
+					<p>&copy; G1 Fitness 2021</p>
+				</div>
+			</footer>
+		</div>
+		<script src="js/generic-functions.js"></script>
+	</body>
+</html>

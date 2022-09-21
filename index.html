@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>G1 Fitness</title>
+		<!--Creatd ourself-->
+		<link rel="icon" type="image/png" href="images/favicon.png">
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<div class="container topbar">
+					<div class="logo-icon">
+						<a href="index.html" class="logo">G1 FITNESS</a>
+						<a href="#" class="menu-icon">
+							<span onclick="toggleMenu()">
+	<!--						Created icon by myself-->
+								<img src="images/menu-icon.png" alt="Main Menu">
+							</span>
+						</a>
+					</div>
+					<nav id="nav">
+						<ul id="menu-list">
+							<li><a href="index.html" class="active">Home</a></li>
+							<li><a href="aboutus.html">About</a></li>
+							<li><a href="nutrition.html">Nutrition</a></li>
+							<li><a href="training.html">Training</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li><a href="#" class="button signup-button" onclick="togglePopup()">Signup</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<main>
+				<section class="registraion popup" id="registration-popup">
+					<div class="overlay"></div>
+					<div class="content">
+						<div class="close-btn" onclick="togglePopup()">&times;</div>
+						<h1 class="section-heading">Register</h1>
+						<form class="registration-form" action="#" method="post">
+							<!--<p>is simply dummy text of the printing and typesetting industry.is simply dummy text of the printing and typesetting industry.is simply dummy text of the printing and typesetting industry.is simply dummy text of the printing and typesetting industry.</p>-->
+							
+							<div class="field-group">
+								<label for="first-name">First name</label>
+								<input type="text" name="first-name" id="first-name" placeholder="Enter first name" required>
+							</div>
+							
+							<div class="field-group">
+								<label for="last-name">Last name</label>
+								<input type="text" name="last-name" id="last-name" placeholder="Enter last name" required>
+							</div>
+							
+							<div class="field-group">
+								<label for="password">Password</label>
+								<input type="password" name="password" id="password" placeholder="Enter password" required>
+							</div>
+							
+							<div class="field-group">
+								<label for="email">E-mail</label>
+								<input type="email" name="email" id="email" placeholder="Enter e-mail" required>
+							</div>
+							
+							<div class="field-group message">
+								<label for="message">Message</label>
+								<textarea name="message" id="message" cols="10" rows="5"></textarea>
+							</div>
+							
+							<input class="submit button" type="submit" name="submit" value="Submit">
+						</form>
+					</div>
+				</section>
+				<section class="banner">
+					<div class="container banner-content">
+						<h1>
+							<span>Let's Do Your</span>
+							<span class="color-text">Fitness Challenge</span>
+							<span>With Us</span>
+						</h1>
+						<!--<p>is simply dummy text of the printing and typesetting industry. </p>-->
+						<div class="button">
+							<a href="#">Contact Us</a>
+						</div>
+					</div>
+				</section>
+				<section class="container commitment">
+					<div class="commitment-info">
+						<h2>Equipment</h2>
+						<p>is simply dummy text of the printing and typesetting industry.is simply dummy text of the printing and typesetting industry.</p>
+						<a href="#">Read More</a>
+					</div>
+					<div class="commitment-info">
+						<h2>Training</h2>
+						<p>is simply dummy text of the printing and typesetting industry.is simply dummy text of the printing and typesetting industry.</p>
+						<a href="#">Read More</a>
+					</div>
+					<div class="commitment-info">
+						<h2>Nutrition</h2>
+						<p>is simply dummy text of the printing and typesetting industry.is simply dummy text of the printing and typesetting industry.</p>
+						<a href="#">Read More</a>
+					</div>
+				</section>
+				<section class="container free-training">
+					<h2 class="section-heading">Try our <span class="highlight-text">free workout</span> training</h2>
+					<div class="training-info">
+						<div class="free-training-info">
+							<div class="training-img">
+								<!--Image From
+								https://www.thehealthjournals.com/not-so-usual-tips-for-weight-loss/-->
+								<img src="images/fitness.png" alt="Fitness">
+							</div>
+							<h3>Fitness Training</h3>
+							<p>Is simply dummy text of the printing and typesetting industry. Is simply dummy text of the printing and typesetting industry.</p>
+						</div>
+						<div class="free-training-info">
+							<div class="training-img">
+								<!--Image From
+								https://www.thehealthjournals.com/not-so-usual-tips-for-weight-loss/-->
+								<img src="images/cardio.png" alt="Cardio">
+							</div>
+							<h3>Cardio Training</h3>
+							<p>Is simply dummy text of the printing and typesetting industry. Is simply dummy text of the printing and typesetting industry.</p>
+						</div>
+						<div class="free-training-info">
+							<div class="training-img">
+								<!--Image From
+								https://www.thehealthjournals.com/not-so-usual-tips-for-weight-loss/-->
+								<img src="images/physio.png" alt="Physio">
+							</div>
+							<h3>Physio Training</h3>
+							<p>Is simply dummy text of the printing and typesetting industry. Is simply dummy text of the printing and typesetting industry.</p>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer>
+				<div class="footer container">
+					<div class="footer-info">
+						<h4>Address</h4>
+						<p>10 Mill Creek Road</p>
+					</div>
+					<div class="footer-info">
+						<h4>Hours</h4>
+						<p>Mon-Fri 11am-6pm</p>
+					</div>
+					<div class="footer-info">
+						<h4>Email</h4>
+						<p><a href="mailto:info@g1fitness.com">info@g1fitness.com</a></p>
+					</div>
+					<div class="footer-info">
+						<h4>Telephone</h4>
+						<div class="phone hide-desktop">
+							<a href="tel:9999999999">999 999 9999</a>
+						</div>
+						<div class="phone hide-mobile">
+							<p>999 999 9999</p>
+						</div>
+					</div>
+				</div>
+				<div class="copyright">
+					<p>&copy; G1 Fitness 2021</p>
+				</div>
+			</footer>
+		</div>
+		<script src="js/generic-functions.js"></script>
+	</body>
+</html>
